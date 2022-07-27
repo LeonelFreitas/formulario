@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario HTML</title>
+</head>
+<body>
+    <h1>MEU FORMULARIO</h1>
+<form action="https://formspree.io/f/mwkygdwz" method="POST">
+
+    <p>
+        <label>Digite seu nome</label>
+        <input placeholder="Digite algo..." type="text"  required value="" name="NOMES">
+    </p>
+    <p>
+        <label>Digite sua mensagem</label>
+        <textarea rows="10" cols="50" required placeholder="Digite algo..."></textarea>
+    </p>
+
+    <p>
+        <label>Escolha os esportes que você pratica:</label>
+        <ul>
+            <li><input checked value="SIM" name="Futebol" type="checkbox">Futebol</li>
+            <li><input value="SIM" name="Basquete" type="checkbox">Basquete</li>
+            <li><input value="SIM" name="Volei" type="checkbox">Volei</li>
+            <li><input value="SIM" name="Judo" type="checkbox">Judo</li>  
+        </ul>
+
+    </p>
+
+    <p>
+        <label> Escolha uma cor favorita?</label>
+
+        <ul>
+            <li><input value="VERMELHO" name="corFavorita" type="radio">VERMELHO</li>
+            <li><input value="VERDE" name="corFavorita" type="radio">VERDE</li>
+            <li><input value="AZUL" name="corFavorita" type="radio">AZUL</li>
+        </ul>
+
+    </p>
+
+    <p>
+        <label>Estado:</label>
+        <select>
+            <option>RJ</option>
+            <option selected value="SÃO PAULO">SP</option>
+            <option>SC</option>
+            <option>PE</option>
+            <option>CE</option>
+        </select>
+    </p>
+
+    <p>
+        <input value="SIM" type="checkbox" name="termosDoContato" >
+        <label>Eu aceito os termos de uso do site</label>
+    </p>
+
+    <button type="submit">Enviar</button>
+
+</form>
+
+</body>
+</html>
